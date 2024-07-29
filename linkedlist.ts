@@ -14,7 +14,7 @@ class LinkedList{
         this.head = null
     }
 
-    //Add nodes to the start of the linked list
+    //Add nodes to the end of the linked list
     append(value: any): void{
         let newNode = new ListNode(value)
         if(this.head == null){
@@ -28,7 +28,7 @@ class LinkedList{
         }
     }
 
-    // Add nodes to the end of the linked list
+    // Add nodes to the start of the linked list
     prepend(value: any): void{
         let temp = this.head
         let newNode = new ListNode(value)
@@ -178,11 +178,11 @@ class LinkedList{
 
 export default LinkedList
 
-// let list = new LinkedList()
-// list.append(4)
-// list.append(5)
-// list.prepend(3)
-// list.prepend(1)
+let list = new LinkedList()
+list.append(4)
+list.append(5)
+list.prepend(3)
+list.prepend(1)
 // list.removeAt(3)
-// // list.pop()
-// // console.log(list.toString())
+// list.pop()
+console.log(list.toString())
